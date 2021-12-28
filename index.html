@@ -244,8 +244,9 @@ li.contact {
     <input type="hidden" name="_subject" value="Page CV">
     <input type="name" name="Nom" placeholder="Nom" size="25%" style="margin-bottom:4px;" required><br>
     <input type="hidden" name="_next" value="#">
-    <input type="email" name="Adresse Mail" placeholder="Adresse Mail" size="25%" style="margin-bottom:4px;" required><br>
-    <input type="hidden" name="_next" value="https://zhongguoda.github.io/recu.html">
+    <input type="email" name="Adresse Mail" placeholder="Adresse Mail" size="25%" style="margin-bottom:4px;" required><br><br>
+    <input type="hidden" name="_next" value="https://zhongguoda.github.io/recum.html">
+    <input type="file" id="someId" name="Pièce jointe" accept="image/png, image/jpeg" style="margin-bottom:4px;"><br>
     <textarea type="text" name="Message" placeholder="Message" rows="4" cols="30" required></textarea><br>
     <button type="submit">Envoyer</button>
   </form>
@@ -270,6 +271,22 @@ li.contact {
   </li>
   <li class="contact"><a href="https://zhongguoda.github.io/contact.html">Contact</a></li>
 </ul>
+
+<script>
+var file = document.getElementById('someId');
+
+file.onchange = function(e) {
+  var files = e.currentTarget.files;
+  var ext = this.value.match(/\.([^\.]+)$/)[1];
+    switch (ext) {
+    case 'pdf':
+      break;
+    default:
+      alert('PDF Seulement !');
+      this.value = '';
+  }
+};
+</script> 
 
 <h1>Curriculum vitae Cédric PRAST</h1>
 
