@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil</title>
 <style>
 
 body {
@@ -11,10 +12,13 @@ body {
 
 img {
   border-radius: 50%;
-  margin-top: 40%;
-  margin-left: 25%;
-  margin-right: auto;
   margin-bottom: 5%;
+  max-height: 40%;
+  max-width: 40%;
+}
+
+form {
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -34,7 +38,6 @@ h2 {
 
 div {
   color: black;
-  text-align: justify;
   display: inline-block;
   text-justify: inter-word;
   margin-left: 25%;
@@ -131,7 +134,7 @@ li.contact {
   display: block;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
 h1 {
   color: black;
   text-align: center;
@@ -142,12 +145,12 @@ h1 {
 
 div {
   color: black;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-left: 0%;
+  display: block;
+  text-align: center;
   padding-left: 20px;
   margin-right: 20px;
   cursor: default;
+  margin-left: 0%;
 }
 
 ul1 {
@@ -183,7 +186,7 @@ li a, .dropbtn {
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 10px;
   text-decoration: none;
 }
 
@@ -230,19 +233,21 @@ li.contact {
 </head>
 <body>
 
-<ul1><img src="https://media-exp1.licdn.com/dms/image/C5603AQG9F_J5Xd2h4g/profile-displayphoto-shrink_200_200/0/1540911011703?e=1644451200&v=beta&t=6wHoeqfQPGNPDUYrKDg9IBJ3mzCXcCoERYFcRJM0rfc" alt="Cédric PRAST" width=50% height=auto><p1>Mail : <a href="mailto:cedric.prast@etu.imt-nord-europe.fr">cedric.prast@etu.imt-nord-europe.fr</a><br>Téléphone : + 33 7 83 49 38 96</p1></ul1>
+<ul1>
+  
+</ul1>
 
 <ul>
   <li><a href="https://zhongguoda.github.io/">Accueil</a></li>
   <li class="dropdown">
-    <a class="dropbtn">Formations</a>
+    <a href="#" class="dropbtn">Formations</a>
     <div class="dropdown-content">
       <a href="https://zhongguoda.github.io/imt_nord_europe.html">IMT Nord Europe</a>
       <a href="https://zhongguoda.github.io/uqam.html">UQAM</a>
     </div>
   </li>
   <li class="dropdown">
-    <a class="dropbtn">Stages</a>
+    <a href="#" class="dropbtn">Stages</a>
     <div class="dropdown-content">
       <a href="https://zhongguoda.github.io/saint-gobain.html">Saint-Gobain</a>
       <a href="https://zhongguoda.github.io/pdl.html">Provence Distribution Logistique</a>
@@ -252,11 +257,20 @@ li.contact {
   <li class="contact"><a href="https://zhongguoda.github.io/contact.html">Contact</a></li>
 </ul>
 
-<h1>Curriculum vitae Cédric PRAST</h1>
+<h1>Contact</h1>
 
-<div></div>
-
+<div>
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQG9F_J5Xd2h4g/profile-displayphoto-shrink_200_200/0/1540911011703?e=1644451200&v=beta&t=6wHoeqfQPGNPDUYrKDg9IBJ3mzCXcCoERYFcRJM0rfc" alt="Cédric PRAST" width=50% height=auto/>
+  <form action="https://formsubmit.co/2c6ead6fae41352d74c68ced73649cfe" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Page CV">
+    <input type="name" name="Nom" placeholder="Nom" size="25%" style="margin-bottom:4px;" required><br>
+    <input type="hidden" name="_next" value="#">
+    <input type="email" name="Adresse Mail" placeholder="Adresse Mail" size="25%" style="margin-bottom:4px;" required><br>
+    <input type="hidden" name="_next" value="https://zhongguoda.github.io/recu.html">
+    <textarea type="text" name="Message" placeholder="Message" rows="4" cols="30" required></textarea><br>
+    <button type="submit">Envoyer</button>
+  </form>
+</div>
 </body>
 </html>
-
-
