@@ -18,6 +18,12 @@ img {
   margin-bottom: 5%;
 }
 
+form {
+  text-align: left;
+  padding-left: 5%;
+  margin-bottom: 10px;
+}
+
 h1 {
   color: black;
   text-align: center;
@@ -231,7 +237,21 @@ li.contact {
 </head>
 <body>
 
-<ul1><img src="https://media-exp1.licdn.com/dms/image/C5603AQG9F_J5Xd2h4g/profile-displayphoto-shrink_200_200/0/1540911011703?e=1644451200&v=beta&t=6wHoeqfQPGNPDUYrKDg9IBJ3mzCXcCoERYFcRJM0rfc" alt="Cédric PRAST" width=50% height=auto/><p1>Mail : <a href="mailto:cedric.prast@etu.imt-nord-europe.fr">cedric.prast@etu.imt-nord-europe.fr</a><br>Téléphone : + 33 7 83 49 38 96</p1></ul1>
+<ul1>
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQG9F_J5Xd2h4g/profile-displayphoto-shrink_200_200/0/1540911011703?e=1644451200&v=beta&t=6wHoeqfQPGNPDUYrKDg9IBJ3mzCXcCoERYFcRJM0rfc" alt="Cédric PRAST" width=50% height=auto/>
+  <form action="https://formsubmit.co/cedric.prast@etu.imt-nord-europe.fr" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Page CV">
+    <input type="name" name="name" placeholder="Nom" size="25%" style="margin-bottom:4px;" required>
+    <input type="email" name="email" placeholder="Adresse Mail" size="25%" style="margin-bottom:4px;" required>
+    <input type="hidden" name="_next" value="#">
+    <textarea type="text" name="name" placeholder="Message" rows="4" cols="30" required></textarea><br>
+    <button type="submit">Envoyer</button>
+  </form>
+  <p1>
+    Mail : <a href="mailto:cedric.prast@etu.imt-nord-europe.fr">cedric.prast@etu.imt-nord-europe.fr</a><br>Téléphone : + 33 7 83 49 38 96
+  </p1>
+</ul1>
 
 <ul>
   <li><a href="https://zhongguoda.github.io/">Accueil</a></li>
